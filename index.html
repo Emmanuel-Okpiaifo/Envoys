@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RCCG The Envoys Youth Province 20 — Celebrating 3 years of grace. Join us for our anniversary on 22nd February 2026. Share your testimony.">
+    <title>RCCG The Envoys — 3rd Anniversary</title>
+    
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="img/logo/favicon.svg">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+    
+    <script src="js/firebase-config.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery-upload.js" defer></script>
+    <style>
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+        .logo-text-fallback {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo/logo-light.svg" alt="The Envoys" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span class="logo-text-fallback" style="display:none;">The Envoys</span>
+            </a>
+            <div class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#testimony">Share Testimony</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-slideshow" aria-hidden="true">
+                <div class="hero-slide hero-slide-active" style="background-image: url('img/hero section/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_12.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-19 at 11.17.44 PM.jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-19 at 11.17.49 PM.jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-19 at 11.17.50 PM (1).jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-19 at 11.17.52 PM (3).jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-20 at 12.09.03 AM (1).jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-20 at 12.09.05 AM.jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-20 at 12.09.06 AM (2).jpeg');"></div>
+                <div class="hero-slide" style="background-image: url('img/hero section/WhatsApp Image 2026-02-20 at 12.09.39 AM (1).jpeg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-slide-dots" aria-label="Slide navigation">
+                <button type="button" class="hero-dot active" data-slide="0" aria-current="true"></button>
+                <button type="button" class="hero-dot" data-slide="1"></button>
+                <button type="button" class="hero-dot" data-slide="2"></button>
+                <button type="button" class="hero-dot" data-slide="3"></button>
+                <button type="button" class="hero-dot" data-slide="4"></button>
+                <button type="button" class="hero-dot" data-slide="5"></button>
+                <button type="button" class="hero-dot" data-slide="6"></button>
+                <button type="button" class="hero-dot" data-slide="7"></button>
+                <button type="button" class="hero-dot" data-slide="8"></button>
+            </div>
+            <div class="hero-content">
+                <div class="hero-kicker animate-on-scroll">RCCG The Envoys Youth Province 20</div>
+                <h1 class="hero-title animate-on-scroll">3rd Anniversary</h1>
+                <p class="hero-subtitle animate-on-scroll">Celebrating years of grace, growth, and God's faithfulness.</p>
+                <div class="hero-meta animate-on-scroll" id="hero-date-chip">22nd February 2026</div>
+                <div class="hero-cta-group animate-on-scroll">
+                    <a href="#testimony"><button class="cta-button">Share Your Testimony</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="coverage-compact" aria-label="Why we celebrate">
+            <div class="coverage-compact-wrap">
+                <h2 class="section-kicker">Why we celebrate</h2>
+                <ul class="coverage-bullets">
+                    <li>Grace & faithfulness</li>
+                    <li>Growth & impact</li>
+                    <li>Community & fellowship</li>
+                    <li>Worship & praise</li>
+                    <li>Testimonies</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimony">
+            <div class="waitlist-container">
+                <h2 class="animate-on-scroll">Share Your Testimony</h2>
+                <p class="waitlist-subtitle animate-on-scroll">We would love to hear how God has been faithful in your life. Share your testimony with us as we celebrate together.</p>
+                <form id="testimony-form" class="animate-on-scroll">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select id="category" name="category">
+                            <option value="">Category (optional)</option>
+                            <option value="salvation">Salvation</option>
+                            <option value="healing">Healing</option>
+                            <option value="provision">Provision</option>
+                            <option value="deliverance">Deliverance</option>
+                            <option value="breakthrough">Breakthrough</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="testimonyText" name="testimonyText" placeholder="Share your testimony..." rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Testimony</button>
+                </form>
+                <p class="disclaimer animate-on-scroll">Your testimony will encourage others. By submitting, you give us permission to share it during the anniversary celebration.</p>
+            </div>
+        </section>
+
+        <section id="value-prop" aria-label="Our journey">
+            <div class="story-content">
+                <h2 class="animate-on-scroll">3 Years of Grace — Our Journey</h2>
+                <div class="story-timeline">
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Year 1 — The beginning</h3>
+                            <p>A vision birthed. The Envoys Youth Province 20 started with a commitment to raise young ambassadors for Christ.</p>
+                            <div class="timeline-media">
+                                <img src="img/Journey story/WhatsApp Image 2026-02-19 at 11.36.47 PM.jpeg" alt="Year 1 milestone" class="timeline-media-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Year 2 — Growing together</h3>
+                            <p>Community expanded. Lives were transformed through worship, fellowship, and the Word.</p>
+                            <div class="timeline-media">
+                                <video controls class="timeline-media-video" poster="img/Journey story/WhatsApp Image 2026-02-19 at 11.36.47 PM.jpeg">
+                                    <source src="img/Journey story/Insta_Saver_@pdanielolawande_carousel_DU73Pl8DTj4_640x362p_1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <span class="marker-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Year 3 — Celebrating grace</h3>
+                            <p>Three years of God's faithfulness. We stand in gratitude and look forward with expectation.</p>
+                            <div class="timeline-media">
+                                <video controls class="timeline-media-video" poster="img/Journey story/WhatsApp Image 2026-02-19 at 11.36.47 PM.jpeg">
+                                    <source src="img/Journey story/Insta_Saver_@rccgtheenvoys_carousel_DU9DVJhjZm1_640x360p_1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-conclusion animate-on-scroll">
+                    <p>To God alone be all the glory. Join us on 22nd February 2026 as we celebrate together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" aria-label="Anniversary moments gallery">
+            <div class="gallery-container">
+                <div class="gallery-header">
+                    <h2 class="animate-on-scroll">Moments of Grace</h2>
+                    <p class="gallery-subtitle animate-on-scroll">A glimpse of three years of celebration, worship, and fellowship</p>
+                </div>
+                <div class="gallery-upload-section animate-on-scroll">
+                    <button id="upload-gallery-btn" class="upload-gallery-btn" aria-label="Upload your moment to the gallery">
+                        <i class="fas fa-cloud-upload-alt"></i> Share Your Moment
+                    </button>
+                </div>
+                <div class="gallery-grid animate-on-scroll">
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_11.jpg" alt="Gallery 1" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_14.jpg" alt="Gallery 2" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_17.jpg" alt="Gallery 3" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_19.jpg" alt="Gallery 4" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_6.jpg" alt="Gallery 5" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_7.jpg" alt="Gallery 6" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__pdanielolawande_carousel_image_1080x1080p_pdanielolawande_s_Carousel_8.jpg" alt="Gallery 7" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_1.jpg" alt="Gallery 8" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_2.jpg" alt="Gallery 9" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_3.jpg" alt="Gallery 10" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_5.jpg" alt="Gallery 11" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_6.jpg" alt="Gallery 12" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/Insta_Saver__rccgtheenvoys_carousel_image_1080x1080p_rccgtheenvoys_s_Carousel_7.jpg" alt="Gallery 13" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/It was conversation Sunday at RCCG The Envoys HQ, We had members speak on their personal experiences during evangelism. It was an insightful teaching today. In case you missed it you can watch the recap on YouTu (4).jpg" alt="Gallery 14" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.50 PM (2).jpeg" alt="Gallery 15" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.50 PM.jpeg" alt="Gallery 16" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.51 PM (1).jpeg" alt="Gallery 17" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.51 PM (2).jpeg" alt="Gallery 18" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.51 PM.jpeg" alt="Gallery 19" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.52 PM (1).jpeg" alt="Gallery 20" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.52 PM (2).jpeg" alt="Gallery 21" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.52 PM.jpeg" alt="Gallery 22" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.54 PM (2).jpeg" alt="Gallery 23" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-19 at 11.17.54 PM.jpeg" alt="Gallery 24" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.08.37 AM.jpeg" alt="Gallery 25" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.08.38 AM (1).jpeg" alt="Gallery 26" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.08.38 AM (2).jpeg" alt="Gallery 27" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.08.38 AM (3).jpeg" alt="Gallery 28" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.08.38 AM.jpeg" alt="Gallery 29" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.02 AM (1).jpeg" alt="Gallery 30" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.02 AM (2).jpeg" alt="Gallery 31" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.02 AM (3).jpeg" alt="Gallery 32" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.02 AM.jpeg" alt="Gallery 33" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.03 AM (2).jpeg" alt="Gallery 34" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.03 AM (3).jpeg" alt="Gallery 35" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.03 AM (4).jpeg" alt="Gallery 36" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.03 AM.jpeg" alt="Gallery 37" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.04 AM (1).jpeg" alt="Gallery 38" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.04 AM.jpeg" alt="Gallery 39" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.05 AM (1).jpeg" alt="Gallery 40" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.05 AM (2).jpeg" alt="Gallery 41" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.05 AM (3).jpeg" alt="Gallery 42" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.06 AM (1).jpeg" alt="Gallery 43" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.06 AM (3).jpeg" alt="Gallery 44" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.06 AM.jpeg" alt="Gallery 45" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.07 AM (1).jpeg" alt="Gallery 46" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.07 AM (2).jpeg" alt="Gallery 47" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.07 AM (3).jpeg" alt="Gallery 48" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.07 AM.jpeg" alt="Gallery 49" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.08 AM (1).jpeg" alt="Gallery 50" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.08 AM (2).jpeg" alt="Gallery 51" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.08 AM (3).jpeg" alt="Gallery 52" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.08 AM.jpeg" alt="Gallery 53" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.09 AM (1).jpeg" alt="Gallery 54" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.09 AM (2).jpeg" alt="Gallery 55" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.09 AM.jpeg" alt="Gallery 56" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.10 AM (1).jpeg" alt="Gallery 57" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.10 AM (2).jpeg" alt="Gallery 58" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.10 AM (3).jpeg" alt="Gallery 59" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.10 AM.jpeg" alt="Gallery 60" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.11 AM (1).jpeg" alt="Gallery 61" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.11 AM (2).jpeg" alt="Gallery 62" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.11 AM (3).jpeg" alt="Gallery 63" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.11 AM.jpeg" alt="Gallery 64" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.12 AM (1).jpeg" alt="Gallery 65" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.12 AM (2).jpeg" alt="Gallery 66" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.12 AM.jpeg" alt="Gallery 67" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.13 AM (1).jpeg" alt="Gallery 68" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.13 AM (2).jpeg" alt="Gallery 69" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.13 AM (3).jpeg" alt="Gallery 70" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.13 AM (4).jpeg" alt="Gallery 71" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.13 AM.jpeg" alt="Gallery 72" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.14 AM (1).jpeg" alt="Gallery 73" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.14 AM.jpeg" alt="Gallery 74" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.36 AM.jpeg" alt="Gallery 75" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.37 AM (1).jpeg" alt="Gallery 76" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.37 AM (2).jpeg" alt="Gallery 77" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.37 AM.jpeg" alt="Gallery 78" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.38 AM (1).jpeg" alt="Gallery 79" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.38 AM (2).jpeg" alt="Gallery 80" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.38 AM (3).jpeg" alt="Gallery 81" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.38 AM.jpeg" alt="Gallery 82" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                    <div class="gallery-item gallery-hidden"><div class="gallery-image-wrapper"><img src="img/Gallery/WhatsApp Image 2026-02-20 at 12.09.39 AM.jpeg" alt="Gallery 83" class="gallery-image"><div class="gallery-overlay"></div></div></div>
+                </div>
+                <div style="text-align:center; margin-top:28px; margin-bottom:12px;">
+                    <button id="gallery-view-more" class="gallery-view-more">View more</button>
+                </div>
+                <div class="gallery-cta animate-on-scroll">
+                    <p>Share your moment with us on social media</p>
+                    <p class="gallery-hashtag">#TheEnvoysAt3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social">
+            <div class="social-group">
+                <h4 class="footer-social-title">RCCG The Envoys Youth Province 20</h4>
+                <p class="footer-tagline">3rd Anniversary — 22nd February 2026</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RCCG The Envoys Youth Province 20</p>
+        </div>
+    </footer>
+
+    <!-- Upload Gallery Modal -->
+    <div class="upload-overlay" id="upload-modal" hidden>
+        <div class="upload-modal">
+            <button class="upload-close" id="upload-modal-close" aria-label="Close upload modal"></button>
+            <h3 class="upload-title">Share Your Moment</h3>
+            <p class="upload-subtitle">Upload an image from the anniversary celebration</p>
+            
+            <div class="upload-form">
+                <div class="upload-input-wrapper">
+                    <input type="file" id="upload-file-input" accept="image/*" aria-label="Select image file">
+                    <label for="upload-file-input" class="upload-file-label">
+                        <i class="fas fa-image"></i>
+                        <span>Click to select or drag image here</span>
+                    </label>
+                    <p class="upload-help-text">JPG, PNG up to 5MB</p>
+                </div>
+                
+                <button id="upload-submit-btn" class="upload-submit-btn" disabled>
+                    <i class="fas fa-upload"></i> Upload Image
+                </button>
+                
+                <div id="upload-progress" class="upload-progress" hidden>
+                    <div class="progress-bar"><div class="progress-fill"></div></div>
+                    <p class="progress-text">Uploading...</p>
+                </div>
+                
+                <div id="upload-status" class="upload-status" hidden></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
