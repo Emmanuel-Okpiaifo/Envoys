@@ -6,7 +6,7 @@
 
 // --- CONFIG: set these values ---
 const CLOUDINARY_CLOUD_NAME = 'dmv0hpkaq';
-const CLOUDINARY_UPLOAD_PRESET = 'envoys_unsigned';
+const CLOUDINARY_UPLOAD_PRESET = 'envoys-gallery';
 // If you deploy the Netlify function below and set the env vars, keep this true
 const CLOUDINARY_SERVER_DELETE_ENABLED = true; // set to true to enable server-side deletion
 // --------------------------------
@@ -109,11 +109,27 @@ class GalleryManager {
                     this.showStatus('Image uploaded successfully! 🎉', 'success');
                     setTimeout(() => { this.closeModal(); this.loadUserUploadedImages(); }, 1200);
                 } else {
-                    console.error('Upload error', xhr.responseText);
-                    this.showStatus('Upload failed. Please try again.', 'error');
-                    this.submitBtn.disabled = false;
+                    let errMsg = 'Upload failed. Please try again.';
+                    try {
+                        const parsed = JSON.parse(xhr.responseText || '{}');
+                        // Cloudinary returns error objects in different shapes
+                        errMsg = parsed.error?.message || parsed.message || JSON.stringify(parsed) || errMsg;
+                    } catch (e) {
+                        errMsg = xhr.responseText || errMsg;
+                    }
+                    console.error('Upload error', xhr.status, errMsg, xhr.responseText);
+                    this.showStatus(`Upload failed (${xhr.status}): ${errMsg}`, 'error');
+                    if (this.submitBtn) this.submitBtn.disabled = false;
                 }
             }
+        };
+
+        xhr.onerror = () => {
+            this.progressDiv && this.progressDiv.setAttribute('hidden', '');
+            const msg = 'Network error during upload. Check your connection and CORS settings.';
+            console.error('Upload network error');
+            this.showStatus(msg, 'error');
+            if (this.submitBtn) this.submitBtn.disabled = false;
         };
 
         xhr.send(formData);
