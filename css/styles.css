@@ -262,7 +262,7 @@ header nav .logo {
     color: #fff;
 }
 header nav .logo img.logo-img {
-    height: 40px;
+    height: 72px;
     width: auto;
     display: block;
 }
@@ -685,7 +685,7 @@ html {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.28);
 }
 
-.hero-kicker { font-size: 0.95rem; letter-spacing: 0.6px; text-transform: uppercase; opacity: 0.9; margin: 0 0 8px 0; }
+.hero-kicker { font-size: clamp(1.1rem, 2.2vw, 1.4rem); letter-spacing: 0.6px; text-transform: uppercase; opacity: 0.95; margin: 0 0 10px 0; color: rgba(255,255,255,0.95); font-weight:700; }
 .hero-title { font-family: 'Playfair Display', serif; }
 .hero-subtitle { font-size: clamp(1rem, 2.2vw, 1.25rem); margin: 0 0 16px 0; opacity: 0.92; }
 .hero-meta {

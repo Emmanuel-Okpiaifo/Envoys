@@ -318,8 +318,7 @@ class GalleryManager {
             box.style.width = '90%';
             box.style.boxShadow = '0 6px 24px rgba(0,0,0,0.2)';
             box.innerHTML = `
-                <p style="margin:0 0 12px;font-weight:600">Delete this image?</p>
-                <p style="margin:0 0 18px;color:#444">This will remove it from your gallery view. To permanently delete from Cloudinary, enable server delete.</p>
+                <p style="margin:0 0 12px;font-weight:600">Are you sure you want to delete this image?</p>
             `;
 
             const btnRow = document.createElement('div');
@@ -330,14 +329,15 @@ class GalleryManager {
             const cancelBtn = document.createElement('button');
             cancelBtn.textContent = 'Cancel';
             cancelBtn.style.padding = '8px 12px';
-            cancelBtn.style.background = '#eee';
-            cancelBtn.style.border = 'none';
+            cancelBtn.style.background = '#f3f3f3';
+            cancelBtn.style.border = '1px solid rgba(0,0,0,0.06)';
             cancelBtn.style.borderRadius = '6px';
+            cancelBtn.style.color = '#333';
 
             const delBtn = document.createElement('button');
-            delBtn.textContent = 'Delete';
+            delBtn.textContent = 'Yes, delete';
             delBtn.style.padding = '8px 12px';
-            delBtn.style.background = '#c62828';
+            delBtn.style.background = 'var(--army-green)';
             delBtn.style.color = '#fff';
             delBtn.style.border = 'none';
             delBtn.style.borderRadius = '6px';
