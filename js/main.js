@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupTestimonySheet();
     setupGalleryInteractions();
     setupGalleryViewMore();
+    setupLightbox();
 });
 
 // Gallery interactions
@@ -250,6 +251,60 @@ function setupGalleryInteractions() {
             }
         });
     });
+    
+    // Handle broken images - remove them if they fail to load
+    handleBrokenImages();
+}
+
+// Function to handle broken/missing images
+function handleBrokenImages() {
+    const galleryImages = document.querySelectorAll('.gallery-grid .gallery-image');
+    let removedCount = 0;
+    
+    galleryImages.forEach(img => {
+        // Check if the image is already loaded and has failed
+        if (img.complete && img.naturalHeight === 0) {
+            // Image failed to load
+            removeGalleryItem(img);
+            removedCount++;
+        } else if (!img.complete) {
+            // Image hasn't loaded yet, add error handler
+            img.addEventListener('error', function() {
+                removeGalleryItem(this);
+            });
+            
+            // Also handle case where src is empty or invalid
+            if (!img.src || img.src === window.location.href || img.src === '') {
+                removeGalleryItem(img);
+            }
+        }
+    });
+    
+    // Also clean up any gallery items that are completely empty or have no valid content
+    const galleryItems = document.querySelectorAll('.gallery-grid .gallery-item');
+    galleryItems.forEach(item => {
+        const img = item.querySelector('.gallery-image');
+        if (!img || !img.src || img.src === window.location.href) {
+            // Check if there's any valid content
+            const wrapper = item.querySelector('.gallery-image-wrapper');
+            if (!wrapper || !wrapper.querySelector('img')) {
+                item.remove();
+            }
+        }
+    });
+    
+    // Re-setup lightbox after any removals
+    if (removedCount > 0) {
+        console.log(`Removed ${removedCount} broken images from gallery`);
+    }
+}
+
+// Helper function to remove a gallery item
+function removeGalleryItem(img) {
+    const galleryItem = img.closest('.gallery-item');
+    if (galleryItem) {
+        galleryItem.remove();
+    }
 }
 
 // Gallery View More
@@ -276,4 +331,69 @@ function setupGalleryViewMore() {
             viewMoreBtn.setAttribute('aria-expanded', isExpanded);
         });
     }
+}
+
+// Lightbox for Gallery Images
+function setupLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxBack = document.getElementById('lightbox-back');
+    const galleryGrid = document.querySelector('.gallery-grid');
+    
+    if (!lightbox || !lightboxImage || !galleryGrid) return;
+    
+    // Function to open lightbox with an image
+    function openLightbox(imageSrc) {
+        lightboxImage.src = imageSrc;
+        lightbox.removeAttribute('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+    
+    // Function to close lightbox
+    function closeLightbox() {
+        lightbox.setAttribute('hidden', '');
+        lightboxImage.src = '';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    
+    // Add click handlers to all gallery images
+    galleryGrid.addEventListener('click', function(e) {
+        const img = e.target.closest('.gallery-image');
+        if (img) {
+            e.preventDefault();
+            openLightbox(img.src);
+        }
+    });
+    
+    // Close button handler
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+    
+    // Back button handler - goes back to website (closes lightbox)
+    if (lightboxBack) {
+        lightboxBack.addEventListener('click', function() {
+            closeLightbox();
+            // Scroll back to gallery section
+            const gallerySection = document.getElementById('gallery');
+            if (gallerySection) {
+                gallerySection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+    
+    // Close on background click
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !lightbox.hasAttribute('hidden')) {
+            closeLightbox();
+        }
+    });
 }
