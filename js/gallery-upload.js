@@ -52,6 +52,8 @@ class GalleryManager {
         if (this.submitBtn) this.submitBtn.addEventListener('click', () => this.uploadImage());
 
         this.loadUserUploadedImages();
+        // Try to load shared images from server (Cloudinary resources)
+        this.fetchSharedImages();
     }
 
     openModal() { if (this.modal) { this.modal.removeAttribute('hidden'); document.body.style.overflow = 'hidden'; } }
@@ -107,7 +109,7 @@ class GalleryManager {
                     };
                     this.saveLocalMetadata(metadata);
                     this.showStatus('Image uploaded successfully! 🎉', 'success');
-                    setTimeout(() => { this.closeModal(); this.loadUserUploadedImages(); }, 1200);
+                    setTimeout(() => { this.closeModal(); this.loadUserUploadedImages(); this.fetchSharedImages(); }, 1200);
                 } else {
                     let errMsg = 'Upload failed. Please try again.';
                     try {
@@ -133,6 +135,64 @@ class GalleryManager {
         };
 
         xhr.send(formData);
+    }
+
+    async fetchSharedImages() {
+        // Calls Netlify function to list Cloudinary images so uploads can be visible to all users
+        try {
+            const res = await fetch('/.netlify/functions/list-images');
+            if (!res.ok) {
+                const text = await res.text();
+                console.warn('list-images failed', res.status, text);
+                return;
+            }
+            const payload = await res.json();
+            const resources = payload.resources || [];
+            this.displaySharedResources(resources);
+        } catch (err) {
+            console.warn('Could not fetch shared images (function may not be deployed):', err);
+        }
+    }
+
+    displaySharedResources(resources) {
+        const galleryGrid = document.querySelector('.gallery-grid');
+        if (!galleryGrid) return;
+
+        resources.forEach(r => {
+            if (!r || !r.public_id) return;
+            // Avoid duplicates
+            if (galleryGrid.querySelector(`[data-public-id="${CSS.escape(r.public_id)}"]`)) return;
+
+            const item = document.createElement('div');
+            item.className = 'gallery-item shared-upload-item';
+            item.setAttribute('data-public-id', r.public_id);
+            item.innerHTML = `
+                <div class="gallery-image-wrapper">
+                    <img src="${r.secure_url || r.url}" alt="Shared upload" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay"></div>
+                </div>
+            `;
+
+            // If this image exists in local storage and belongs to current user, show delete button
+            const key = 'envoys-uploads';
+            const arr = JSON.parse(localStorage.getItem(key) || '[]');
+            const local = arr.find(u => u.id === r.public_id && u.userId === CURRENT_USER_ID);
+            if (local) {
+                const btn = document.createElement('button');
+                btn.className = 'delete-upload-btn';
+                btn.setAttribute('data-id', r.public_id);
+                btn.setAttribute('aria-label', 'Delete this image');
+                btn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+                btn.addEventListener('click', async () => {
+                    const confirmed = await this.showDeleteConfirmation();
+                    if (confirmed) this.deleteImage(r.public_id, item);
+                });
+                item.querySelector('.gallery-image-wrapper').appendChild(btn);
+            }
+
+            // Insert shared items at the top
+            galleryGrid.insertBefore(item, galleryGrid.firstChild);
+        });
     }
 
     saveLocalMetadata(metadata) {
