@@ -157,27 +157,22 @@ class GalleryManager {
     }
 
     displayUserUploads(uploads) {
+        // Insert user uploads directly into the main gallery grid so they match sizing/layout
         const galleryGrid = document.querySelector('.gallery-grid');
         if (!galleryGrid) return;
 
-        let userUploadsSection = document.getElementById('user-uploads-section');
-        if (!userUploadsSection) {
-            userUploadsSection = document.createElement('div');
-            userUploadsSection.id = 'user-uploads-section';
-            userUploadsSection.className = 'user-uploads-section';
-            const header = document.createElement('p');
-            header.className = 'user-uploads-header';
-            header.innerHTML = '<i class="fas fa-star"></i> Your Contributions';
-            userUploadsSection.appendChild(header);
-            galleryGrid.parentElement.insertBefore(userUploadsSection, galleryGrid);
-        }
+        // Remove any existing user-uploaded items first
+        const existing = galleryGrid.querySelectorAll('.user-uploaded-item');
+        existing.forEach(n => n.remove());
 
-        const existingItems = userUploadsSection.querySelectorAll('.gallery-item');
-        existingItems.forEach(item => item.remove());
-
+        // Insert uploads at the start of the grid (so they appear alongside other gallery items)
         uploads.forEach(upload => {
+            // Avoid duplicates
+            if (galleryGrid.querySelector(`[data-public-id="${CSS.escape(upload.id)}"]`)) return;
+
             const item = document.createElement('div');
             item.className = 'gallery-item user-uploaded-item';
+            item.setAttribute('data-public-id', upload.id);
             item.innerHTML = `
                 <div class="gallery-image-wrapper">
                     <img src="${upload.url}" alt="User upload" class="gallery-image" loading="lazy">
@@ -189,14 +184,18 @@ class GalleryManager {
             `;
 
             const deleteBtn = item.querySelector('.delete-upload-btn');
-            if (deleteBtn) deleteBtn.addEventListener('click', () => this.deleteImage(upload.id, item));
+            if (deleteBtn) deleteBtn.addEventListener('click', async () => {
+                const confirmed = await this.showDeleteConfirmation();
+                if (confirmed) this.deleteImage(upload.id, item);
+            });
 
-            userUploadsSection.appendChild(item);
+            // Insert at the top so user's uploads show first; change to appendChild if preferred
+            galleryGrid.insertBefore(item, galleryGrid.firstChild);
         });
     }
 
     async deleteImage(id, element) {
-        if (!confirm('Delete this image? This will remove it from your view. To permanently delete from Cloudinary, enable server delete.')) return;
+        // This function assumes confirmation already obtained when called from the UI.
 
         const key = 'envoys-uploads';
         const arr = JSON.parse(localStorage.getItem(key) || '[]');
@@ -228,6 +227,76 @@ class GalleryManager {
             const userUploadsSection = document.getElementById('user-uploads-section');
             if (userUploadsSection && userUploadsSection.querySelectorAll('.gallery-item').length === 0) userUploadsSection.remove();
         }, 400);
+    }
+
+    showDeleteConfirmation() {
+        return new Promise((resolve) => {
+            // If a modal already exists, don't create another
+            if (document.getElementById('delete-confirm-modal')) {
+                resolve(false);
+                return;
+            }
+
+            const overlay = document.createElement('div');
+            overlay.id = 'delete-confirm-modal';
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.right = '0';
+            overlay.style.bottom = '0';
+            overlay.style.background = 'rgba(0,0,0,0.5)';
+            overlay.style.display = 'flex';
+            overlay.style.alignItems = 'center';
+            overlay.style.justifyContent = 'center';
+            overlay.style.zIndex = '9999';
+
+            const box = document.createElement('div');
+            box.style.background = '#fff';
+            box.style.padding = '18px';
+            box.style.borderRadius = '8px';
+            box.style.maxWidth = '420px';
+            box.style.width = '90%';
+            box.style.boxShadow = '0 6px 24px rgba(0,0,0,0.2)';
+            box.innerHTML = `
+                <p style="margin:0 0 12px;font-weight:600">Delete this image?</p>
+                <p style="margin:0 0 18px;color:#444">This will remove it from your gallery view. To permanently delete from Cloudinary, enable server delete.</p>
+            `;
+
+            const btnRow = document.createElement('div');
+            btnRow.style.display = 'flex';
+            btnRow.style.justifyContent = 'flex-end';
+            btnRow.style.gap = '8px';
+
+            const cancelBtn = document.createElement('button');
+            cancelBtn.textContent = 'Cancel';
+            cancelBtn.style.padding = '8px 12px';
+            cancelBtn.style.background = '#eee';
+            cancelBtn.style.border = 'none';
+            cancelBtn.style.borderRadius = '6px';
+
+            const delBtn = document.createElement('button');
+            delBtn.textContent = 'Delete';
+            delBtn.style.padding = '8px 12px';
+            delBtn.style.background = '#c62828';
+            delBtn.style.color = '#fff';
+            delBtn.style.border = 'none';
+            delBtn.style.borderRadius = '6px';
+
+            btnRow.appendChild(cancelBtn);
+            btnRow.appendChild(delBtn);
+            box.appendChild(btnRow);
+            overlay.appendChild(box);
+            document.body.appendChild(overlay);
+
+            const cleanup = (result) => {
+                overlay.remove();
+                resolve(result);
+            };
+
+            cancelBtn.addEventListener('click', () => cleanup(false));
+            delBtn.addEventListener('click', () => cleanup(true));
+            overlay.addEventListener('click', (e) => { if (e.target === overlay) cleanup(false); });
+        });
     }
 }
 
