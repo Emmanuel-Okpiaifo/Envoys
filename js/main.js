@@ -115,7 +115,7 @@ function setupTestimonySheet() {
 
     function showSubmitOverlay(title, message, type = 'success') {
         const overlay = document.getElementById('submit-overlay');
-        const modal = document.querySelector('.submit-result-modal');
+        const modal = document.querySelector('.sample-modal');
         const closeBtn = document.getElementById('submit-close');
         const t = document.getElementById('submit-title');
         const m = document.getElementById('submit-message');
@@ -164,20 +164,12 @@ function setupTestimonySheet() {
 
     const form = document.getElementById('testimony-form');
     const submitBtn = document.getElementById('testimony-submit-btn');
-    const btnText = submitBtn?.querySelector('.submit-btn-text');
-    const btnLoading = submitBtn?.querySelector('.submit-btn-loading');
-
-    function setLoading(loading) {
-        if (!submitBtn || !btnText || !btnLoading) return;
-        submitBtn.disabled = loading;
-        btnText.hidden = loading;
-        btnLoading.hidden = !loading;
-    }
-
-    if (form) {
+    if (form && submitBtn) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            setLoading(true);
+            submitBtn.classList.add('is-loading');
+            submitBtn.disabled = true;
+
             const payload = {
                 name: (document.getElementById('fullName') || {}).value || '',
                 email: (document.getElementById('email') || {}).value || '',
@@ -189,11 +181,12 @@ function setupTestimonySheet() {
                 userAgent: navigator.userAgent,
                 timestamp: new Date().toISOString()
             };
-
+            
             try {
                 const result = await postJSON(SHEET_WEBHOOK_URL, payload);
-                setLoading(false);
-
+                submitBtn.classList.remove('is-loading');
+                submitBtn.disabled = false;
+                
                 if (result.ok) {
                     form.reset();
                     showSubmitOverlay(
@@ -210,7 +203,8 @@ function setupTestimonySheet() {
                 }
             } catch (err) {
                 console.warn('Testimony submission failed:', err);
-                setLoading(false);
+                submitBtn.classList.remove('is-loading');
+                submitBtn.disabled = false;
                 showSubmitOverlay(
                     'Submission Failed',
                     'We were unable to receive your testimony at this time. This may be due to a temporary connection issue or a problem on our end. Please check your internet connection and try again. If the problem persists, reach out to us directly so we can assist you in sharing your testimony.',
