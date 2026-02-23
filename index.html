@@ -136,7 +136,12 @@
                     <div class="form-group">
                         <textarea id="testimonyText" name="testimonyText" placeholder="Share your testimony..." rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="submit-button">Submit Testimony</button>
+                    <button type="submit" class="submit-button" id="testimony-submit-btn">
+                        <span class="submit-btn-text">Submit Testimony</span>
+                        <span class="submit-btn-loading" hidden>
+                            <i class="fas fa-spinner fa-spin"></i> Submitting...
+                        </span>
+                    </button>
                 </form>
                 <p class="disclaimer animate-on-scroll">Your testimony will encourage others. By submitting, you give us permission to share it during the anniversary celebration.</p>
             </div>
@@ -361,12 +366,12 @@
         </div>
     </div>
 
-    <!-- Testimony submit result modal (success/failure) -->
-    <div class="sample-overlay" id="submit-overlay" hidden>
-        <div class="sample-modal">
-            <button class="sample-close" id="submit-close" aria-label="Close"></button>
-            <h3 class="sample-title" id="submit-title">Thank You!</h3>
-            <p class="sample-sub" id="submit-message">Your testimony has been received.</p>
+    <!-- Testimony submit result modal (success/failure) - Envoys themed -->
+    <div class="submit-result-overlay" id="submit-overlay" hidden>
+        <div class="submit-result-modal">
+            <button class="submit-result-close" id="submit-close" aria-label="Close"></button>
+            <h3 class="submit-result-title" id="submit-title">Thank You!</h3>
+            <p class="submit-result-message" id="submit-message">Your testimony has been received.</p>
         </div>
     </div>
 
