@@ -182,23 +182,23 @@ function setupTestimonySheet() {
                 const result = await postJSON(SHEET_WEBHOOK_URL, payload);
                 
                 if (result.ok) {
+                    form.reset();
                     showSubmitOverlay(
-                        '✅ Submission Successful!',
-                        'Thank you! Your testimony has been received. May it encourage many as we celebrate together.',
+                        'Thank You! 🙏',
+                        'Your testimony has been received successfully. We are grateful that you chose to share how God has been faithful in your life. Your story will encourage and inspire others as we celebrate three years of grace together. May the Lord continue to be glorified through your life.',
                         'success'
                     );
                 } else {
                     showSubmitOverlay(
-                        '❌ Submission Failed',
-                        'Sorry, there was an error submitting your testimony. Please try again or contact us.',
+                        'Submission Failed',
+                        'We were unable to receive your testimony at this time. This may be due to a temporary connection issue or a problem on our end. Please check your internet connection and try again. If the problem persists, reach out to us directly so we can assist you in sharing your testimony.',
                         'failure'
                     );
                 }
-                form.reset();
             } catch (err) {
                 console.warn('Testimony submission failed:', err);
                 showSubmitOverlay(
-                    '❌ Submission Failed',
+                    'Submission Failed',
                     'Sorry, there was an error submitting your testimony. Please try again or contact us.',
                     'failure'
                 );
