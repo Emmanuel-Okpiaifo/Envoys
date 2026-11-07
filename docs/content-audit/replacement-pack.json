@@ -1,0 +1,1063 @@
+{
+ "generated": "2026-11-07",
+ "terminology": "branches (never campuses)",
+ "replacements": [
+  {
+   "page": "/churches/*  (all 12 detail pages)",
+   "field": "heading 'About This Campus'",
+   "current": "About This Campus",
+   "verified_replacement": "About This Branch",
+   "evidence_url": "User instruction 2026-11-07 (branches, not campuses)",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "site-wide",
+   "field": "any 'campus/campuses' wording in copy, meta, alt text, code specs",
+   "current": "campus",
+   "verified_replacement": "branch / branches",
+   "evidence_url": "User instruction",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 1",
+   "current": "LIVING IN THE NEW 2025-03-30 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "THE KING'S DAUGHTER || ROYAL DIADEM CONFERENCE",
+    "youtube_url": "https://www.youtube.com/watch?v=Oe0gbIzLLbQ",
+    "published": "2026-11-07",
+    "thumbnail": "https://i4.ytimg.com/vi/Oe0gbIzLLbQ/hqdefault.jpg",
+    "local_thumbnail": "images/yt_Oe0gbIzLLbQ.jpg",
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "full livestreamed service",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication); 'LIVING IN THE NEW' DOES exist on the channel as 'LIVING IN THE NEW || RCCG THE ENVOYS || 11TH JANUARY 2026' (+ 'METAMORPHOSIS- LIVING IN THE NEW PT 3 || P.DANIEL OLAWANDE || 18th January 2026'), so title is real but site date March 30 2025 conflicts. Exact video IDs need browser (channel search page).",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 2",
+   "current": "THE POWER OF FAITH 2025-03-23 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "IILLUMINATION SERVICE || KINGDOM PRIORITIZATION || 3RD NOVEMBER 2026",
+    "youtube_url": "https://www.youtube.com/watch?v=TNRDoJrq2SQ",
+    "published": "2026-11-04",
+    "thumbnail": "https://i1.ytimg.com/vi/TNRDoJrq2SQ/hqdefault.jpg",
+    "local_thumbnail": "images/yt_TNRDoJrq2SQ.jpg",
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "full livestreamed service",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication)",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 3",
+   "current": "WALKING IN PURPOSE 2025-03-16 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "UNENDING OPEN DOORS || DAY 8 EVENING || MERCY CONVENTION 2026",
+    "youtube_url": "https://www.youtube.com/watch?v=kCL0-HYL50c",
+    "published": "2026-11-03",
+    "thumbnail": "https://i4.ytimg.com/vi/kCL0-HYL50c/hqdefault.jpg",
+    "local_thumbnail": "images/yt_kCL0-HYL50c.jpg",
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "edited convention session upload",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication)",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 4",
+   "current": "GRACE FOR THE JOURNEY 2025-03-09 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "UNENDING OPEN DOORS || DAY 7 EVENING || MERCY CONVENTION 2026",
+    "youtube_url": "https://www.youtube.com/watch?v=zT_adMCeNMA",
+    "published": "2026-11-03",
+    "thumbnail": "https://i3.ytimg.com/vi/zT_adMCeNMA/hqdefault.jpg",
+    "local_thumbnail": null,
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "edited convention session upload",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication)",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 5",
+   "current": "THE HEART OF WORSHIP 2025-03-02 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "BUSINESS BREAKTHROUGH || DAY 6 MORNING SESSION || MERCY CONVENTION 2026",
+    "youtube_url": "https://www.youtube.com/watch?v=ueE1tAoNzHw",
+    "published": "2026-11-03",
+    "thumbnail": "https://i2.ytimg.com/vi/ueE1tAoNzHw/hqdefault.jpg",
+    "local_thumbnail": null,
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "edited convention session upload",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication)",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "recent sermon card 6",
+   "current": "STANDING ON THE WORD 2025-02-23 -> link https://www.youtube.com/@RCCGTheEnvoys",
+   "verified_replacement": {
+    "title": "UNENDING OPEN DOORS || DAY 5 EVENING || MERCY CONVENTION 2026",
+    "youtube_url": "https://www.youtube.com/watch?v=pbJ7sx0fW6w",
+    "published": "2026-11-03",
+    "thumbnail": "https://i1.ytimg.com/vi/pbJ7sx0fW6w/hqdefault.jpg",
+    "local_thumbnail": null,
+    "speaker": "UNVERIFIED (not in title/description)",
+    "type": "edited convention session upload",
+    "date_note": "feed date = upload/stream date; service date from title where stated"
+   },
+   "evidence_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCfTXn9jTmbqnGu1qpT9l18Q",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (title/URL/date); speaker unknown",
+   "conflicts": "Original title/date UNVERIFIED (not found in latest-15 feed or channel search; absence is not proof of fabrication)",
+   "status": "proposed"
+  },
+  {
+   "page": "/ (home)",
+   "field": "LATEST SERMON panel",
+   "current": "LIVING IN THE NEW, March 30, 2025, Pastor Daniel Olawande",
+   "verified_replacement": {
+    "title": "THE KING'S DAUGHTER || ROYAL DIADEM CONFERENCE",
+    "youtube_url": "https://www.youtube.com/watch?v=Oe0gbIzLLbQ",
+    "published": "2026-11-07"
+   },
+   "evidence_url": "YouTube RSS feed",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "Consider pulling RSS dynamically so it never goes stale",
+   "status": "proposed"
+  },
+  {
+   "page": "/sermons",
+   "field": "sermon card dates",
+   "current": "Feb-Mar 2025",
+   "verified_replacement": "Use feed <published> (upload date); event date may differ, e.g. Mercy Convention sessions uploaded 2026-11-03 for 14-22 Oct",
+   "evidence_url": "YouTube RSS",
+   "evidence_date": "2026-11-07",
+   "confidence": "medium",
+   "conflicts": "Upload date != service date; prefer date in title where present",
+   "status": "proposed"
+  },
+  {
+   "page": "/ (home) & /mercy-convention",
+   "field": "Mercy Convention promo + volunteer form",
+   "current": "Upcoming, Oct 14-22 2026, volunteer sign-up open",
+   "verified_replacement": "Mark as concluded: 'Mercy Convention 2026 - Unending Open Doors (Oct 14-22) has ended. Rewatch the sessions' + links e.g. https://www.youtube.com/watch?v=hb7z5H3g9hU (Day 1), kCL0-HYL50c (Day 8 Evening); close/hide volunteer form or replace with next event",
+   "evidence_url": "YouTube oEmbed for pastor-channel session videos + Envoys channel uploads (primary); Telegram mirror secondary",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "Theme on site 'The Chain of Open Doors - Unending Open Doors'; videos only say 'Unending Open Doors'",
+   "status": "proposed"
+  },
+  {
+   "page": "site-wide",
+   "field": "address",
+   "current": "6a cocoa industries road, ikeja, lagos",
+   "verified_replacement": "6A Cocoa Industries Road, Ogba Industrial Estate, Ikeja, Lagos (The Envoys Centre)",
+   "evidence_url": "https://www.facebook.com/rccgtheenvoys (og:description '6A COCOA INDUSTRIES RD, OGBA, IKEJA', primary) ; Telegram mirror (secondary) adds 'Ogba Industrial Estate'",
+   "evidence_date": "2026-11-07",
+   "confidence": "high for 6A Cocoa Industries Rd, Ogba, Ikeja; medium for 'Ogba Industrial Estate' wording",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/* & /",
+   "field": "Instagram link",
+   "current": "https://instagram.com/rccgtheenvoys",
+   "verified_replacement": "Keep; verified account title 'RCCG - THE ENVOYS CHURCH HQ (@rccgtheenvoys)', ~63K followers",
+   "evidence_url": "https://www.instagram.com/rccgtheenvoys/",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "footer",
+   "field": "YouTube link",
+   "current": "two variants: youtube.com/@RCCGTheEnvoys and youtube.com/rccgtheenvoys",
+   "verified_replacement": "Standardise to https://www.youtube.com/@RCCGTheEnvoys (channel UCfTXn9jTmbqnGu1qpT9l18Q)",
+   "evidence_url": "YouTube",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/vi",
+   "field": "official social account",
+   "current": null,
+   "verified_replacement": "Instagram @rccgtheenvoysvi (name 'RCCG- THE ENVOYS VICTORIA ISLAND')",
+   "evidence_url": "https://www.instagram.com/rccgtheenvoysvi/ (found via search; profile wall blocked fetch)",
+   "evidence_date": "2026-11-07",
+   "confidence": "medium",
+   "conflicts": "Not confirmed as linked from HQ account",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/igando",
+   "field": "official social account",
+   "current": null,
+   "verified_replacement": "Instagram @rccgtheenvoysigando (name 'RCCG - THE ENVOYS IGANDO'; reel cites Pastor Raymond Iroham ministering - guest/resident unknown)",
+   "evidence_url": "https://www.instagram.com/rccgtheenvoysigando/ (found via search; profile wall blocked fetch)",
+   "evidence_date": "2026-11-07",
+   "confidence": "medium",
+   "conflicts": "Not confirmed as linked from HQ account",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "Get Directions button",
+   "current": "shown",
+   "verified_replacement": "Remove for virtual branch; replace with 'Join online' only when real link verified",
+   "evidence_url": "Page states Virtual / Global",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "Get Directions button",
+   "current": "shown",
+   "verified_replacement": "Remove for virtual branch; replace with 'Join online' only when real link verified",
+   "evidence_url": "Page states Virtual / Global",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/solid-rock",
+   "field": "duplicated description + template paragraph",
+   "current": "Description shown twice + 'At X, we are passionate about...' boilerplate",
+   "verified_replacement": "Show description once; drop boilerplate paragraph or replace with group-supplied copy",
+   "evidence_url": "site HTML",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/royal-diadem",
+   "field": "duplicated description + template paragraph",
+   "current": "Description shown twice + 'At X, we are passionate about...' boilerplate",
+   "verified_replacement": "Show description once; drop boilerplate paragraph or replace with group-supplied copy",
+   "evidence_url": "site HTML",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/envoys-nest",
+   "field": "duplicated description + template paragraph",
+   "current": "Description shown twice + 'At X, we are passionate about...' boilerplate",
+   "verified_replacement": "Show description once; drop boilerplate paragraph or replace with group-supplied copy",
+   "evidence_url": "site HTML",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/mega-stars",
+   "field": "duplicated description + template paragraph",
+   "current": "Description shown twice + 'At X, we are passionate about...' boilerplate",
+   "verified_replacement": "Show description once; drop boilerplate paragraph or replace with group-supplied copy",
+   "evidence_url": "site HTML",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/the-haven",
+   "field": "duplicated description + template paragraph",
+   "current": "Description shown twice + 'At X, we are passionate about...' boilerplate",
+   "verified_replacement": "Show description once; drop boilerplate paragraph or replace with group-supplied copy",
+   "evidence_url": "site HTML",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/royal-diadem",
+   "field": "Past Events (real item available)",
+   "current": null,
+   "verified_replacement": {
+    "title": "THE KING'S DAUGHTER || ROYAL DIADEM CONFERENCE",
+    "url": "https://www.youtube.com/watch?v=Oe0gbIzLLbQ",
+    "published": "2026-11-07",
+    "thumbnail": "images/yt_Oe0gbIzLLbQ.jpg"
+   },
+   "evidence_url": "YouTube RSS feed",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (exists); event date unknown",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "site-wide",
+   "field": "reused _DSC4231/4278/4280/4309/4310/4325/4354 images on cards (not Wraps)",
+   "current": "same 7 files across Home groups, group events, Giving header",
+   "verified_replacement": "Use one image per context; only genuine labelled photos supplied by church; YouTube thumbnails ok for sermon cards",
+   "evidence_url": "audit",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "venue, Sunday time, branch name, status",
+   "current": "Inauguration countdown 00:00:00:00, HQ address/contact",
+   "verified_replacement": {
+    "status": "active (posts through Oct 2026; replace countdown)",
+    "branch_alias": "The Light House",
+    "venue": "Maridom Palace Hotel, 1/3 Maridom Close, Toll Gate, Ota (Sango), Ogun State",
+    "sunday_time": "8:00 AM (stated for Celebration Service 4 Oct 2026)",
+    "also": "Night of Mercy announced on branch page 7 Oct 2026",
+    "facebook_page_id": "1140508839142513 (https://www.facebook.com/1140508839142513)"
+   },
+   "evidence_url": "https://www.prayers1.com/NG/Sango-Otta/1140508839142513/RCCG-The-Envoys-SANGO (third-party mirror of Facebook page 'RCCG The Envoys SANGO', bio 'The official account of RCCG The Envoys Sango')",
+   "evidence_date": "2026-11-07",
+   "confidence": "medium (secondary mirror; confirm on Facebook page)",
+   "conflicts": "Site lists 8:30 AM template time for other branches; 8:00 AM may be event-specific",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "official account + current activity",
+   "current": null,
+   "verified_replacement": {
+    "facebook_page_id": "976814785515674 (https://www.facebook.com/976814785515674)",
+    "name": "RCCG The Envoys Abule Egba",
+    "bio": "The official account of RCCG The Envoys Abule-Egba",
+    "active": "posts 2-3 Nov 2026 (Thanksgiving Sunday, Best Dressed session)"
+   },
+   "evidence_url": "https://www.prayers1.com/NG/Ikeja/976814785515674/RCCG-The-Envoys-Abule-Egba (mirror)",
+   "evidence_date": "2026-11-07",
+   "confidence": "medium",
+   "conflicts": "Address on mirror only 'Ikeja'; street address still unknown",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "launch/existence",
+   "current": null,
+   "verified_replacement": {
+    "evidence": "Pastor's Threads post 2025-10-07: 'Yes! RCCG THE ENVOYS AJAH is hereeee' calling volunteers; hashtag #envoysajah"
+   },
+   "evidence_url": "https://www.threads.com/@pdanielolawande/post/DPgWmBiAivu",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (pastor's own account)",
+   "conflicts": "No address/time in snippet",
+   "status": "proposed"
+  },
+  {
+   "page": "/churches (index) & /",
+   "field": "branch count and footprint",
+   "current": null,
+   "verified_replacement": "Pastor's official site: 'a community-oriented family church across 12 expressions in Lagos, Nigeria, South Africa, the USA, and online' - matches 12 branch pages",
+   "evidence_url": "https://pdanielolawande.com/",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "Pastor site calls them 'expressions'; use 'branches' per user",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/*",
+   "field": "group names list",
+   "current": null,
+   "verified_replacement": "Pastor site lists 'The Interphase, Solid Rock, Royal Diadem, Envoys Nest, or The Haven' (no Mega Stars; adds The Interphase)",
+   "evidence_url": "https://pdanielolawande.com/",
+   "evidence_date": "2026-11-07",
+   "confidence": "high (source); meaning unresolved",
+   "conflicts": "Site has Mega Stars and no Interphase; site calls it 'Envoys Nest Hub' vs 'Envoys Nest'",
+   "status": "proposed"
+  },
+  {
+   "page": "/groups/royal-diadem",
+   "field": "conference video detail",
+   "current": null,
+   "verified_replacement": {
+    "id": "Oe0gbIzLLbQ",
+    "type": "full livestream, 7h37m",
+    "streamed": "2026-11-07T08:59Z (09:59 WAT)",
+    "channel": "RCCG The Envoys"
+   },
+   "evidence_url": "yt_video_metadata.json",
+   "evidence_date": "2026-11-07",
+   "confidence": "high",
+   "conflicts": "",
+   "status": "proposed"
+  }
+ ],
+ "gaps": [
+  {
+   "page": "/sermons",
+   "field": "speaker per video",
+   "unknown": "Speaker not stated in most titles; Mercy Convention videos tagged #pdanielolawande only",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Video description/on-screen speaker or church media team confirmation",
+   "status": "open"
+  },
+  {
+   "page": "/sermons",
+   "field": "duplicate uploads",
+   "unknown": "8h1DFdYcnGQ and E2pg_DMnIQY have lengthSeconds=0 (scheduled/empty live entries); aYzYQchRtxI (55.8 min, streamed 2026-10-27T17:12Z) is the playable 27 Oct Illumination service. ueE1tAoNzHw title Day 6 Morning vs description Day 5 Evening.",
+   "conflicting_or_old_source": "yt_video_metadata.json (watch-page metadata)",
+   "evidence_to_resolve": "Church media team to pick canonical video; titles also contain typos IILLUMINATION/UENDING/CORNATION - do not copy typos, confirm",
+   "status": "open"
+  },
+  {
+   "page": "/sermons",
+   "field": "Mercy Convention rewatch links",
+   "unknown": "Resolved partially: YouTube oEmbed (primary) confirms VNl-5bZrV00, yKrRNzm3MuQ, 7me4KvmuwH0, YWYexkGHF6Q, -rCW84cq5dM, pF-wkHxyvAg are on official channel 'P.Daniel Olawande' (@PDanielOlawande), titled 'NIGHT OF MERCY CONVENTION || UNENDING OPEN DOORS || DAY ONE EVENING ... DAY FOUR EVENING'. Day 5-9 pastor-channel IDs still unknown.",
+   "conflicting_or_old_source": "https://telemetr.io/es/channels/1474286235-pdanielfireinmybones (third-party mirror)",
+   "evidence_to_resolve": "Confirm which channel those live IDs belong to (likely PDaniel Olawande channel) before linking",
+   "status": "open"
+  },
+  {
+   "page": "/mercy-convention",
+   "field": "Day 9 / remaining session videos, next convention date",
+   "unknown": "Not all 9 days on Envoys channel feed (latest-15 only)",
+   "conflicting_or_old_source": "YouTube feed",
+   "evidence_to_resolve": "Browse https://www.youtube.com/@RCCGTheEnvoys/videos (parent browser) ",
+   "status": "open"
+  },
+  {
+   "page": "site-wide/footer",
+   "field": "Sunday service time",
+   "unknown": "Site says 12:00 PM; Facebook About says 'SUNDAY SERVICE: 1:00PM & 3:00 PM'; Telegram 'coronation service ... 12pm'",
+   "conflicting_or_old_source": "https://www.facebook.com/rccgtheenvoys (likely outdated)",
+   "evidence_to_resolve": "Church office confirmation; keep 12 PM (newer source) meanwhile",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ikeja",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ikeja",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/vi",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/vi",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/vi",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/vi",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/yaba",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/yaba",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/yaba",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/yaba",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/yaba",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/ajah",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/igando",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/igando",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/igando",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/igando",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/abule-egba",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/street-church",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/street-church",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/street-church",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/street-church",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/street-church",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/limitless",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/south-africa",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/south-africa",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/south-africa",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/south-africa",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/south-africa",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/usa",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/usa",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/usa",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/usa",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/usa",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "official social account",
+   "unknown": "No branch account found via search",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check HQ Instagram bio/highlights and tagged accounts (parent browser)",
+   "status": "open"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "service time",
+   "unknown": "All show 'Sundays at 8:30 AM' - identical template value, unverified",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch post/flyer or church office",
+   "status": "open"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "address, pastor/leader, branch contact",
+   "unknown": "Unknown; page shows HQ email/phone and 'Get Directions' (HQ)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch flyer/Instagram bio; until then label contact as 'Contact HQ' and hide/redirect Get Directions to branch maps link only when verified",
+   "status": "open"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "photo",
+   "unknown": "No branch photo; shares HQ footer image",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Genuine branch photo from branch/HQ account with permission",
+   "status": "open"
+  },
+  {
+   "page": "/churches/tech-church",
+   "field": "description copy",
+   "unknown": "Generic template copy; Ajah reuses site tagline verbatim",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Branch-supplied description",
+   "status": "open"
+  },
+  {
+   "page": "/churches/sango",
+   "field": "inauguration countdown",
+   "unknown": "SSR shows 00:00:00:00; target date unknown",
+   "conflicting_or_old_source": "site",
+   "evidence_to_resolve": "Visual check whether JS countdown works; confirm inauguration date or whether it already happened",
+   "status": "open"
+  },
+  {
+   "page": "footer",
+   "field": "branch list",
+   "unknown": "Footer omits Limitless, Street Church, Tech Church",
+   "conflicting_or_old_source": "site",
+   "evidence_to_resolve": "Confirm whether these are active branches",
+   "status": "open"
+  },
+  {
+   "page": "/groups/solid-rock",
+   "field": "Past Events (3 cards + images)",
+   "unknown": "Events unverified; images are reused generic _DSC files: Men's Retreat 2025 (Mar 15 2025), Leadership Summit (Jan 20 2025), Prayer Walk (Nov 8 2024)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group/HQ posts with event names, dates and photos; else replace section with 'Follow updates on @rccgtheenvoys' rather than delete silently",
+   "status": "open"
+  },
+  {
+   "page": "/groups/solid-rock",
+   "field": "meeting times/contact/leader",
+   "unknown": "Generic Sun 12PM/Tue 5:30PM + HQ contact",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group leader/church office",
+   "status": "open"
+  },
+  {
+   "page": "/groups/royal-diadem",
+   "field": "Past Events (3 cards + images)",
+   "unknown": "Events unverified; images are reused generic _DSC files: Women's Conference 2025 (Apr 5 2025), Sisters' Brunch (Feb 14 2025), Prayer & Worship Night (Dec 1 2024)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group/HQ posts with event names, dates and photos; else replace section with 'Follow updates on @rccgtheenvoys' rather than delete silently",
+   "status": "open"
+  },
+  {
+   "page": "/groups/royal-diadem",
+   "field": "meeting times/contact/leader",
+   "unknown": "Generic Sun 12PM/Tue 5:30PM + HQ contact",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group leader/church office",
+   "status": "open"
+  },
+  {
+   "page": "/groups/envoys-nest",
+   "field": "Past Events (3 cards + images)",
+   "unknown": "Events unverified; images are reused generic _DSC files: Youth Camp 2025 (Mar 28 2025), Teens Hangout (Jan 11 2025), Back to School Rally (Sep 7 2024)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group/HQ posts with event names, dates and photos; else replace section with 'Follow updates on @rccgtheenvoys' rather than delete silently",
+   "status": "open"
+  },
+  {
+   "page": "/groups/envoys-nest",
+   "field": "meeting times/contact/leader",
+   "unknown": "Generic Sun 12PM/Tue 5:30PM + HQ contact",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group leader/church office",
+   "status": "open"
+  },
+  {
+   "page": "/groups/mega-stars",
+   "field": "Past Events (3 cards + images)",
+   "unknown": "Events unverified; images are reused generic _DSC files: Children's Day Celebration (May 27 2025), Easter Fun Day (Apr 20 2025), Christmas Party (Dec 22 2024)",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group/HQ posts with event names, dates and photos; else replace section with 'Follow updates on @rccgtheenvoys' rather than delete silently",
+   "status": "open"
+  },
+  {
+   "page": "/groups/mega-stars",
+   "field": "meeting times/contact/leader",
+   "unknown": "Generic Sun 12PM/Tue 5:30PM + HQ contact",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group leader/church office",
+   "status": "open"
+  },
+  {
+   "page": "/groups/the-haven",
+   "field": "Past Events (3 cards + images)",
+   "unknown": "Events unverified; images are reused generic _DSC files: Couples' Retreat 2025, Marriage Workshop, Date Night Fellowship",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group/HQ posts with event names, dates and photos; else replace section with 'Follow updates on @rccgtheenvoys' rather than delete silently",
+   "status": "open"
+  },
+  {
+   "page": "/groups/the-haven",
+   "field": "meeting times/contact/leader",
+   "unknown": "Generic Sun 12PM/Tue 5:30PM + HQ contact",
+   "conflicting_or_old_source": "site only",
+   "evidence_to_resolve": "Group leader/church office",
+   "status": "open"
+  },
+  {
+   "page": "/groups/*",
+   "field": "official group accounts",
+   "unknown": "No Instagram accounts found for any of 5 groups",
+   "conflicting_or_old_source": "none",
+   "evidence_to_resolve": "Check @rccgtheenvoys bio/highlights",
+   "status": "open"
+  },
+  {
+   "page": "/ (home)",
+   "field": "pastor photos",
+   "unknown": "_DSC4278 'Pastor Daniel' and _DSC4231 'Pastor Nifemi' also used on Wraps/events; identity of persons in files not verified",
+   "conflicting_or_old_source": "site",
+   "evidence_to_resolve": "Church confirms which file shows whom",
+   "status": "open"
+  },
+  {
+   "page": "/wraps",
+   "field": "ALL (kept OPEN, website untouched per user)",
+   "unknown": "30 generic names on 7 rotating images, 'APRIL' no year, inconsistent CLAIM",
+   "conflicting_or_old_source": "site",
+   "evidence_to_resolve": "Real monthly winners + photos from church; DO NOT EDIT now",
+   "status": "open"
+  },
+  {
+   "page": "/",
+   "field": "founding history (optional)",
+   "unknown": "Guardian/ThisDay 2023: inaugural service 19 Feb 2023, 4pm, Excellence Hotel Ogba - historic only, times outdated",
+   "conflicting_or_old_source": "https://guardian.ng/news/nigeria/rccgs-the-envoys-holds-inaugural-service/",
+   "evidence_to_resolve": "Use only as history, not current times",
+   "status": "open"
+  },
+  {
+   "page": "site-wide",
+   "field": "HQ phone",
+   "unknown": "Site +2349062134890; place listing exa.ai shows +2348144235656 and Sunday 3-7 PM; pastor office +2348101490714 (office, not church)",
+   "conflicting_or_old_source": "https://exa.ai/library/place/wnmjnq6g1lx (aggregator)",
+   "evidence_to_resolve": "Church office confirms public number",
+   "status": "open"
+  },
+  {
+   "page": "/groups/*",
+   "field": "Interphase group",
+   "unknown": "Pastor site names 'The Interphase' group not on church site",
+   "conflicting_or_old_source": "https://pdanielolawande.com/",
+   "evidence_to_resolve": "Ask church whether to add / what it is",
+   "status": "open"
+  },
+  {
+   "page": "/sermons",
+   "field": "LIVING IN THE NEW exact video",
+   "unknown": "Real Jan 2026 videos exist; IDs not captured",
+   "conflicting_or_old_source": "channel search",
+   "evidence_to_resolve": "Browser: https://www.youtube.com/@RCCGTheEnvoys/search?query=living+in+the+new",
+   "status": "open"
+  }
+ ]
+}
